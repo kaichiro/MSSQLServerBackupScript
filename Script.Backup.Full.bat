@@ -66,4 +66,4 @@ echo Excluindo arquivos .bak do diretório de bakcup (%PathBackupFile%)
 forfiles /P %PathBackupFile% /S /D -%QtdeDiasPreservarBAK% /M *.bak /C "cmd /c del @file"
 
 echo Excluindo arquivos .rar do diretório de compactados (%PathBackupFileCompacted%)
-forfiles /P %PathBackupFileCompacted% /S /D -%QtdeDiasPreservarRAR% /M *.bak /C "cmd /c del @file"
+forfiles /P %PathBackupFileCompacted% /S /D -%QtdeDiasPreservarRAR% /M *.rar /C "cmd /c del @file"
