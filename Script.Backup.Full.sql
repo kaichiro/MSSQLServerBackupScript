@@ -19,3 +19,6 @@ SET @sqlCommand = 'BACKUP DATABASE ' +@DBNAME+  ' TO DISK = '''+@BackupFile+ '''
 
 -- Executar o comando SQL gerado
 EXEC(@sqlCommand)
+
+-- Faz shrink da base de dados
+DBCC SHRINKDATABASE ('$(vDBName)', 10);
