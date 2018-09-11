@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 
 echo A sessao abaixo, configuração de variáveis, é dedicada
 echo para configurar variáveis locais de parametrização deste
@@ -50,6 +50,10 @@ set DataHora=%data%-%horario%
 set DataHora=%DataHora: =0%
 
 set FileNameBKP=%DataBaseName%.Backup.FULL-%DataHora%.bak
+
+echo criando diretorio de backups
+mkdir %PathBackupFile%
+mkdir %PathBackupFileCompacted%
 
 cls
 
