@@ -36,5 +36,10 @@ echo Quantidade de dias a ser preservado os arquivos de backup
 set QtdeDiasPreservarBAK=7
 ```
 
+## Recursos adicionais
+- O arquivo CopyBkpFileOtherDestination.bat faz uma cópia dos arquivos de bakcup para um 
+diretório na LAN ou FTP (configuração transparente) e depois exclui arquivos antigos deste
+diretório remoto.
+
 ## CONSIDERAÇÕES FINAIS
 - Não há necessidade de configurar/modificar o arquivo Script.Backup.Full.sql (arquivo de criação do arquivo de backup SQL Server), pois o mesmo recebe todos os dados, via passagem de parâmetros, do arquivo Script.Backup.Full.bat.
